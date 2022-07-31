@@ -14,3 +14,17 @@
 #   acertou = true
 #else
 # voce digitou um numero invalido
+
+numero_sorteado = 20
+
+chute = int(input("Chute um número: "))
+
+if chute > numero_sorteado:
+    print("Numero chutado é acima do sorteado")
+elif chute < numero_sorteado:
+    print("Número chutado é abaixo do numero sorteado")
+elif chute == numero_sorteado:
+    print("Você acertou")
+
+
+

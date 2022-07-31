@@ -2,13 +2,17 @@
 # fatorial só pode ser numero positivo e inteiro
 # ex: fatorial de 3 = (3 * 2 * 1) = 6
 
-numero = input("digite um numero ")
-numerodois = int(numero)
+numero = int(input("digite um numero "))
 
-if numerodois <= 0:
-    print("digite apenas numeros positivos ")
 
+if numero > 0:
     fatorial = 1
-for fatorial in numerodois:
-    fatorial = fatorial * numerodois
+    for item in range(1, numero + 1):
+        fatorial = fatorial * item
     print(fatorial)
+else:
+    print("Digite um numero inteiro maior que zero")
+
+
+
+

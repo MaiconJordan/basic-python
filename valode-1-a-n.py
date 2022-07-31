@@ -11,5 +11,5 @@ print("----------------------")
 
 max = int(input("digite o valor maximo que você quer imprimir: "))
 
-for maximo in range(1,max):
-    print(maximo + 1)
+for maximo in range(1,max + 1):
+    print(maximo )
