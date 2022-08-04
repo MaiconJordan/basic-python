@@ -17,17 +17,22 @@
 import random
 
 numero_sorteado = random.randint(1, 10)
-acertou = False
+rodada = 1
+tentativas = 3
 
-while acertou == False:
+while (rodada <= tentativas):
+    print("tentativa ", rodada, "de ", tentativas)
     chute = int(input("Chute um número: "))
-    if chute > numero_sorteado:
+    if (chute > numero_sorteado):
         print("Numero chutado é acima do sorteado")
-    elif chute < numero_sorteado:
+    elif (chute < numero_sorteado):
         print("Número chutado é abaixo do numero sorteado")
-    elif chute == numero_sorteado:
+    elif (chute == numero_sorteado):
         print("Você acertou")
-        acertou = True
+    print("*****************************")
+    rodada += 1
+        
+print("FIM DE JOGO")    
 
 
 
