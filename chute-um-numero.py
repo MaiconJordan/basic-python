@@ -20,9 +20,9 @@ numero_sorteado = random.randint(1, 10)
 rodada = 1
 tentativas = 3
 
-while (rodada <= tentativas):
-    print("tentativa ", rodada, "de ", tentativas)
-    chute = int(input("Chute um número: "))
+while (rodada <= tentativas):    
+    print("tentativa {} de {}".format(rodada, tentativas))
+    chute = int(input("Digite um numero de 1 a 10: "))
     if (chute > numero_sorteado):
         print("Numero chutado é acima do sorteado")
     elif (chute < numero_sorteado):
