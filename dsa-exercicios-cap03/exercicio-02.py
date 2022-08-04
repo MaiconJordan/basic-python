@@ -83,8 +83,7 @@ print (list(Fahrenheit))
 '''
 
 
-import pandas as pd
-pd.__version__
+
 
 
 
