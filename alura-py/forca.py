@@ -1,3 +1,4 @@
+import random
 from re import A
 
 
@@ -14,10 +15,12 @@ def jogar():
         linha = linha.strip()
         palavras.append(linha)        
     arquivo.close()
+
+    numero = random.randrange(0,len(palavras))
+    palavra_secreta = palavras[numero].upper()
+
     
-    print(palavras)
-    
-    palavra_secreta = "cabecuda".upper()
+
     letras_acertadas = ["_" for letra in palavra_secreta]
     
     enforcou = False
@@ -39,9 +42,9 @@ def jogar():
                 index += 1
             
         else:
-            erros += 1 
+            erros = erros+1
 
-        enforcou = erros == 6
+        enforcou = erros == 7
         acertou = "_" not in letras_acertadas
         print(letras_acertadas)
         
@@ -51,6 +54,7 @@ def jogar():
     else:
         print("VOCÊ PERDEU")
     print("Fim do jogo")
+
 
 
 if(__name__ == "__main__"):
