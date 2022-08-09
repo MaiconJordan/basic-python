@@ -10,7 +10,11 @@ operacao = int(input("Digite sua opção (1/2/3/4)\n"))
 primeiro = int(input("Digite o primeiro numero\n"))
 segundo = int(input("Digite o Segundo numero\n"))
 
-if operacao == 1:
+if (operacao == 1):
     print(f'{primeiro} +  {segundo} =  {primeiro + segundo}')
+elif (operacao == 2):
+    print(f'{primeiro} - {segundo} = {primeiro - segundo}')
+elif (operacao == 3):
+    print(f'{primeiro} * {segundo} = {primeiro * segundo}')
 else:
-    pass
+    print(f'{primeiro} / {segundo} = {primeiro / segundo}')
