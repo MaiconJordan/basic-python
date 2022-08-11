@@ -42,7 +42,7 @@ def jogar():
                 index += 1
             
         else:
-            erros = erros+1
+            erros = erros + 1
 
         enforcou = erros == 7
         acertou = "_" not in letras_acertadas
