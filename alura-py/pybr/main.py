@@ -1,9 +1,14 @@
+from wsgiref import validate
 from Cpf import Cpf
+from validate_docbr import CPF
 
-cpf = 96857536287
+cpf = CPF()
 
-meucpf = Cpf(cpf)
+print(cpf.validate("4456131651"))
 
-print(meucpf)
+
+
+
+
 
 
