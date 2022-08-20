@@ -1,4 +1,4 @@
-from Cpf import Cpf
+from cpf_cnpj import CpfCnpj
 
-cpf_um = Cpf("15316264754")
+cpf_um = CpfCnpj("15316264754", "cnpj")
 print(cpf_um)
