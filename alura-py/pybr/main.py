@@ -1,4 +1,7 @@
-from cpf_cnpj import CpfCnpj
+from TelefonesBrs import TelefonesBr
+import re
 
-cpf_um = CpfCnpj("15316264754", "cnpj")
-print(cpf_um)
+telefone = "552126481234"
+
+telefone_objeto = TelefonesBr(telefone)
+print(telefone_objeto)
