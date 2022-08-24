@@ -1,8 +1,8 @@
-from TelefonesBrs import TelefonesBr
-import re
+from acesso_cep import BuscaEndereco
 
-telefone = "55545999062759"
 
-telefone_objeto = TelefonesBr(telefone)
+cep = 88040-001
 
-print(telefone_objeto)
+cep1 = BuscaEndereco(cep)
+
+cep1.acessa_via_cep()
